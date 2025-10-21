@@ -10,10 +10,21 @@ export function Base() {
         <Navbar />
       </div>
 
-      <div className="h-[30rem] w-full bg-black flex flex-col items-center pt-30">
-        <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center bg-linear-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent relative z-20">
-          Welcome to Deepthink
+      <div className="h-[60rem] w-full bg-black flex flex-col items-center pt-30">
+        <h1 className=" font-bold text-center relative z-20">
+          <span className="md:text-7xl text-3xl lg:text-6xl bg-linear-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent ">
+            Welcome to ZyntexaIT
+          </span>
+          <br />
+          <span className="text-white md:text-5xl text-xl lg:text-4xl">
+            Driving Digital Evolution
+          </span>
         </h1>
+        <p className=" pt-3 text-gray-400 font-semibold text-center text-lg w-1/2 flex-wrap">
+          ZyntexaIT is an AI-driven web development agency that crafts sleek
+          websites, powerful software, and smart automation solutions to fuel
+          business growth with innovation and precision.
+        </p>
 
         <div className="w-[60rem] h-40 relative">
           {/* Gradients */}
@@ -35,14 +46,20 @@ export function Base() {
           {/* Radial Gradient to prevent sharp edges */}
           <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
         </div>
-        <p className="text-cyan-500 font-semibold text-center text-lg w-1/2 flex-wrap">
-          DeepThink is a visionary AI-driven web development agency dedicated to
-          creating intelligent digital solutions. We design sleek,
-          high-performance websites, build powerful software systems, and
-          integrate advanced AI technologies to accelerate business growth. From
-          modern web design to smart automation, DeepThink empowers your brand
-          to thrive in the digital era with innovation and precision.
-        </p>
+
+        <div className="mt-6 flex gap-4">
+          <button className="text-black font-semibold w-40 h-10 bg-linear-to-r from-cyan-400 via-blue-400 to-indigo-400 rounded-2xl cursor-pointer">
+            Get our Service &#45;&#62;
+          </button>
+          <button className="text-white w-40 h-10 rounded-2xl border-2 border-cyan-400 cursor-pointer">
+            See our Project
+          </button>
+        </div>
+        <div className="flex gap-6 w-3/4 mt-10">
+          <div className="w-1/3 h-80 rounded-2xl bg-gray-950"></div>
+          <div className="w-1/3 h-80 rounded-2xl bg-gray-950 border-white"></div>
+          <div className="w-1/3 h-80 rounded-2xl bg-gray-950"></div>
+        </div>
       </div>
 
       <div style={{ width: "100%", height: 600, position: "relative" }}>
