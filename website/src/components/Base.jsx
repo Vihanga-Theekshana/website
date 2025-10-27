@@ -7,6 +7,7 @@ import { MdWeb } from "react-icons/md";
 import { BiSolidBadgeCheck } from "react-icons/bi";
 import { MdOutlineWbSunny } from "react-icons/md";
 import { RiTeamFill } from "react-icons/ri";
+import Footer from "./Footer";
 export function Base() {
   return (
     <>
@@ -56,7 +57,12 @@ export function Base() {
             See our Project
           </button>
         </div>
-        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-6 w-full md:w-5/6 mt-20">
+        <div className="mt-30 flex flex-col items-center">
+          <h1 className="text-cyan-300 text-xl sm:text-2xl lg:text-3xl font-bold">
+            Our Services
+          </h1>
+        </div>
+        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-6 w-full md:w-5/6 mt-10">
           <div className="w-full md:w-[30%] rounded-2xl bg-gray-950 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-103 hover:bg-green-950 p-4">
             <div className="flex flex-col items-center">
               <MdWeb className="text-green-300 text-5xl" />
@@ -117,8 +123,8 @@ export function Base() {
         </div>
 
         <div className="mt-12 flex flex-col items-center">
-          <RiTeamFill className="text-white  text-3xl sm:text-4xl lg:text-5xl" />
-          <h1 className="text-white text-xl sm:text-2xl lg:text-3xl font-bold">
+          <RiTeamFill className="text-cyan-400  text-3xl sm:text-4xl lg:text-5xl" />
+          <h1 className="text-cyan-400 text-xl sm:text-2xl lg:text-3xl font-bold">
             About Our Team
           </h1>
         </div>
@@ -173,9 +179,53 @@ export function Base() {
             </div>
           </div>
         </div>
+        <div className="flex flex-col md:flex-row w-full p-4 gap-4">
+          {/* Left Column */}
+          <div className="flex-1 p-3 rounded-2xl bg-gray-900 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-103">
+            <h1 className="bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent text-xl md:text-3xl lg:text-4xl font-bold">
+              About ZyntexaIT
+            </h1>
+            <p className="text-gray-400 pt-3 lg:text-lg pb-6">
+              ZyntexaIT is a forward-thinking technology agency dedicated to
+              accelerating business transformation through intelligent digital
+              solutions. We specialize in AI-driven web development, custom
+              software engineering, and smart automation designed to enhance
+              operational efficiency and drive sustainable growth.
+            </p>
+            <button className="text-black font-semibold w-40 h-10 bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 rounded-xl cursor-pointer">
+              Learn More
+            </button>
+          </div>
+
+          {/* Right Column */}
+          <div className="flex-1 flex flex-col gap-2">
+            <div className="flex-1 rounded-2xl bg-gray-800 w-full text-gray-200 p-4 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-103">
+              <h1 className="font-bold">Innovation Focused</h1>
+              <span className="text-sm text-gray-300">
+                We continuously explore emerging technologies to deliver
+                cutting-edge, future-ready digital solutions tailored to your
+                business needs.
+              </span>
+            </div>
+            <div className="flex-1 rounded-2xl bg-gray-800 w-full text-gray-200 p-4 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-103">
+              <h1 className="font-bold">Client-Oriented Excellence</h1>
+              <span className="text-sm text-gray-300">
+                Every project is built around our clients’ strategic goals,
+                ensuring measurable outcomes and long-term value creation.
+              </span>
+            </div>
+            <div className="flex-1 rounded-2xl bg-gray-800 w-full text-gray-200 p-4 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-103">
+              <h1 className="font-bold">Quality & Precision</h1>
+              <span className="text-xs text-gray-300">
+                Highest standards of technical excellence and project delivery,
+                ensuring reliability, scalability, and lasting impact.
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className="w-full h-[600px] relative">
+      <div className="w-full h-[500px] relative">
         <LiquidEther
           colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
           mouseForce={20}
@@ -194,6 +244,9 @@ export function Base() {
           autoRampDuration={0.6}
           className="bg-black"
         />
+        <div className="absolute bottom-0 w-full z-50">
+          <Footer />
+        </div>
       </div>
     </>
   );
