@@ -198,7 +198,7 @@ export function Base() {
           </div>
 
           {/* Right Column */}
-          <div className="flex-1 flex flex-col gap-2">
+          <div className="flex-1 flex flex-col gap-2 rounded-2xl p-3 bg-gray-900">
             <div className="flex-1 rounded-2xl bg-gray-800 w-full text-gray-200 p-4 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-103">
               <h1 className="font-bold">Innovation Focused</h1>
               <span className="text-sm text-gray-300">
