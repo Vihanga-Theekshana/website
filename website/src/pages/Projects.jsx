@@ -61,14 +61,14 @@ export default function Projects() {
                         className="w-full h-50 aspect-video rounded-xl overflow-hidden shadow-xl border border-white/20 cursor-pointer transition hover:scale-[1.02]"
 
                     >
-                        <img src={goviMart} alt="GoviMart" />
+                        <img src={goviMart} alt="Govimart" />
 
                     </div>
 
                     <div className="w-full h-90 bg-white/5 border border-white/10 backdrop-blur-md p-4 rounded-xl text-sm md:text-base leading-relaxed shadow-lg">
                         <h2 className="text-lg font-semibold mb-1">GoviMart Platform</h2>
                         <p className="text-white/70">
-                            GoviMart is a supermarket management system. The goal is creating a smarter digital marketplace for farmers and customers. This system focuses on reducing the impact of intermediaries, who often take a large portion of the profit, making it difficult for farmers to earn fair income.                       </p>
+                            GoviMart is a supermarket management system. The goal is creating a smarter digital marketplace for farmers and customers. This system focuses on reducing the impact of intermediaries, who often take a large portion of the profit, making it difficult for farmers to earn fair income.   </p>
                         <div className="space-y-2 mt-5">
                             <p className="font-semibold">Source code</p>
 
